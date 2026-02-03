@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>RupeeCollector</title>
+	<link rel="stylesheet" href="./css/spritegame.css">
+	<script src="./script/spritegame_detectCollisions.js" defer></script>
+	<script src="./script/spritegame_keyevents.js" defer></script>
+	<script src="./script/spritegame_player.js" defer></script>
+	<script src="./script/spritegame_main.js" defer></script>
+</head>
+
+<body>
+	<div id="remove">
+		<div id="headBox">
+			<div id="title">Welcome To RupeeCollector</div>
+		</div>
+		<div id="menu">
+			<div id="startBtn" onclick="makeFieldVisible(); startGame()" class="btns">
+				Start Game
+			</div>
+			<div id="menuBtn" onclick="openMenu()" class="btns">Menu</div>
+			<div id="menuDescription"></div>
+		</div>
+	</div>
+
+
+	<div id="gameField">
+		<div id="dashboard">
+			<div id="debug_output"></div>
+		</div>
+		<div id="surface">
+			<div id="player">
+				<img id="spriteImg" src="./img/LinkRunFinal.png" alt="sprite" />
+			</div>
+			<div id="redBox">
+				<img src="./img/greenRupy.png" alt="rupee">
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
